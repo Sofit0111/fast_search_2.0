@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Search Selection",
+  "version": "1.2",
+  "description": "Поиск выделенного текста по Alt+S",
+  "permissions": ["scripting", "activeTab", "storage", "contextMenus"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Искать выделенное" },
+  "options_ui": { "page": "options.html", "open_in_tab": false },
+  "commands": {
+    "search-selection": {
+      "suggested_key": { "default": "Alt+S", "mac": "MacCtrl+S" },
+      "description": "Search selected text"
+    }
+  }
+}
